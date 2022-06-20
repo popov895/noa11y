@@ -12,6 +12,8 @@ class Extension {
     }
 
     disable() {
+        // This extension uses the 'unlock-dialog' session mode to hide 
+        // the accessibility button on the lock screen as well.
         Main.sessionMode.disconnect(this._sessionModeChangedId);
         this._showAccessibilityMenu();
     }

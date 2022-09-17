@@ -4,7 +4,7 @@ A simple GNOME extension that hides the accessibility button on the top bar
 
 ### Installation
 
-Currently, this extension is not yet available for installation from the GNOME Shell Extensions website.
+The extension is available for installation on the [GNOME Shell Extensions website](https://extensions.gnome.org/extension/5162/no-a11y/).
 
 To install manually follow the steps below:
 

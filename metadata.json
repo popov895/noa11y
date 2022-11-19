@@ -4,7 +4,8 @@
     "description": "Hide the accessibility button on the top bar.",
     "version": 1,
     "shell-version": [
-        "42"
+        "42",
+        "43"
     ],
     "session-modes": [
         "user",

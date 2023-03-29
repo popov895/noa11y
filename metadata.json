@@ -5,7 +5,8 @@
     "version": 2,
     "shell-version": [
         "42",
-        "43"
+        "43",
+        "44"
     ],
     "session-modes": [
         "user",

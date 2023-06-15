@@ -12,5 +12,8 @@
         "user",
         "unlock-dialog"
     ],
-    "url": "https://github.com/popov895/noa11y"
+    "url": "https://github.com/popov895/noa11y",
+    "donations": {
+        "buymeacoffee": "popov895a"
+    }
 }

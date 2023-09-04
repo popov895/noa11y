@@ -1,8 +1,8 @@
 'use strict';
 
-const Main = imports.ui.main;
+import * as Main from 'resource:///org/gnome/shell/ui/main.js';
 
-class Extension {
+export default class Extension {
     enable() {
         this._hideAccessibilityMenu();
         this._sessionModeChangedId = Main.sessionMode.connect(

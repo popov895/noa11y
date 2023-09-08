@@ -2,7 +2,7 @@
 
 import * as Main from 'resource:///org/gnome/shell/ui/main.js';
 
-export default class Extension {
+export default class NoA11yExtension {
     enable() {
         this._hideAccessibilityMenu();
         this._sessionModeChangedId = Main.sessionMode.connect(

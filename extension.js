@@ -5,16 +5,13 @@ import * as Main from 'resource:///org/gnome/shell/ui/main.js';
 export default class NoA11yExtension {
     enable() {
         this._hideAccessibilityMenu();
-        this._sessionModeChangedId = Main.sessionMode.connect(
-            `updated`,
-            this._onSessionModeChanged.bind(this)
-        );
+        Main.sessionMode.connectObject(`updated`, this._hideAccessibilityMenu, this);
     }
 
     disable() {
         // This extension uses the 'unlock-dialog' session mode to hide
         // the accessibility button on the lock screen as well.
-        Main.sessionMode.disconnect(this._sessionModeChangedId);
+        Main.sessionMode.disconnectObject(this);
         this._showAccessibilityMenu();
     }
 
@@ -24,10 +21,6 @@ export default class NoA11yExtension {
 
     _showAccessibilityMenu() {
         Main.panel.statusArea[`a11y`]?.container.show();
-    }
-
-    _onSessionModeChanged() {
-        this._hideAccessibilityMenu();
     }
 }
 

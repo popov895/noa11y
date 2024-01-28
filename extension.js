@@ -16,11 +16,11 @@ class Extension {
     }
 
     _hideAccessibilityMenu() {
-        Main.panel.statusArea[`a11y`]?.container.hide();
+        Main.panel.statusArea.a11y?.container.hide();
     }
 
     _showAccessibilityMenu() {
-        Main.panel.statusArea[`a11y`]?.container.show();
+        Main.panel.statusArea.a11y?.container.show();
     }
 }
 
